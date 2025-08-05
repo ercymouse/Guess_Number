@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="bg-gradient-to-r from-gray-900 via-black to-gray-950 h-screen w-screen"
+  >
+    <div
+      class="container text-center text-white mx-auto flex flex-col justify-center items-center w-screen"
+    >
+      <div class="top flex gap-4 flex-col">
+        <p class="text-4xl font-light pt-8">Guess My Number!</p>
+        <p class="text-gray-400 font-bold">(Between 1 and 20)</p>
+        <button
+          class="again px-4 py-1 border-gray-400 border bg-gray-400 rounded-4xl w-20 mx-auto hover:border-red-600 cursor-pointer hover:bg-red-600 transition duration-700"
+        >
+          Again
+        </button>
+
+        <p
+          class="number text-7xl border border-gray-800 w-22 p-2 rounded-full bg-gray-800 mx-auto"
+        >
+          ?
+        </p>
+      </div>
+      <div
+        class="bottom mt-8 justify-center text-white flex gap-4 max-sm:flex-col"
+      >
+        <div
+          class="user flex flex-col w-80 mx-auto p-4 border-gray-800 border mb-4 rounded"
+        >
+          <input
+            type="number"
+            class="guess border-1 bg-white border-white w-22 p-2 mb-4 mx-auto focus:border-white text-gray-950 font-bold text-center rounded focus:outline-none focus:ring-0 focus:border-none"
+          />
+          <button
+            class="check px-4 py-1 border-gray-400 border bg-gray-400 rounded-4xl w-20 mx-auto hover:border-gray-700 cursor-pointer hover:bg-gray-700 transition duration-700"
+          >
+            Check!
+          </button>
+        </div>
+        <div
+          class="result bg-gray-800 w-80 mx-auto mb-4 p-4 rounded gap-1 flex flex-col"
+        >
+          <p class="message text-lg font-bold text-red-600">
+            Start guessing...
+          </p>
+          <div class="s flex justify-center gap-1">
+            <p>Score :</p>
+            <p class="score">20</p>
+          </div>
+          <div class="h flex justify-center gap-1">
+            <p>HighScore :</p>
+            <p class="highscore">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
